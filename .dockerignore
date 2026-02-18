@@ -1,0 +1,42 @@
+# Dependencies
+node_modules
+npm-debug.log*
+
+# Next.js
+.next
+out
+
+# Git
+.git
+.gitignore
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env files (handle secrets via Cloud Run env vars)
+.env
+.env.*
+!.env.example
+
+# Tests
+coverage
+__tests__
+*.test.*
+*.spec.*
+
+# Docs
+README.md
+CHANGES.md
+*.md
+
+# Other
+Dockerfile
+.dockerignore
+cloudbuild.yaml
