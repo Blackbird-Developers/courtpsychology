@@ -29,18 +29,23 @@ export default function HomePage() {
                 </div>
               </div>
               
+              {/* Tagline */}
+              <p className="text-teal font-semibold text-sm sm:text-base tracking-wider uppercase mb-4">
+                We Engage With The Expert Witness So You Don&apos;t Have To
+              </p>
+
               {/* Headline - Solicitor-focused */}
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] font-bold text-navy leading-[1.1] mb-5 text-balance">
-                Court-Ready Reports,{' '}
+                Court-Ready Forensic Reports,{' '}
                 <span className="relative">
                   <span className="relative z-10">Fast &amp; Reliable</span>
                   <span className="absolute bottom-1 left-0 right-0 h-3 bg-teal/20 -z-0" />
                 </span>
               </h1>
-              
+
               {/* Subheadline - Speed, reliability, ease for solicitors */}
               <p className="text-base sm:text-lg md:text-xl text-navy/70 leading-relaxed mb-6 max-w-xl">
-                <strong className="text-navy">21-day turnaround</strong> on independent psychological assessments.{' '}
+                Independent forensic psychological assessments.{' '}
                 Standard formats judges expect. Legal Aid compatible. Hassle-free process from instruction to delivery.
               </p>
 
@@ -50,13 +55,19 @@ export default function HomePage() {
                   <svg className="w-5 h-5 text-teal flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  <span><strong>Legal Aid</strong> compatible</span>
+                  <span><strong>Quick Turnaround</strong></span>
                 </div>
                 <div className="flex items-center gap-2 text-navy/80">
                   <svg className="w-5 h-5 text-teal flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  <span><strong>PSI registered</strong> clinicians</span>
+                  <span><strong>Minimal Involvement</strong> from solicitor</span>
+                </div>
+                <div className="flex items-center gap-2 text-navy/80">
+                  <svg className="w-5 h-5 text-teal flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  <span><strong>Legal Aid</strong> compatible</span>
                 </div>
               </div>
               
@@ -97,7 +108,7 @@ export default function HomePage() {
                       </div>
                       <div>
                         <div className="font-semibold text-navy text-sm">Assessment Complete</div>
-                        <div className="text-xs text-navy/60">Family Court Report</div>
+                        <div className="text-xs text-navy/60">Forensic Court Report</div>
                       </div>
                     </div>
                     <span className="availability-badge">
@@ -175,48 +186,24 @@ export default function HomePage() {
       <section className="py-16 md:py-24 bg-navy">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-balance text-white">
-            Inadequate Reports Jeopardise Your Case
+            Inadequate Forensic Reports Jeopardise Your Case
           </h2>
           <p className="text-lg md:text-xl text-white/70 mb-10 max-w-2xl mx-auto">
-            Irish courts can reject expert evidence that lacks independence or methodological rigour. 
+            Irish courts can reject forensic expert evidence that lacks independence or methodological rigour.
             Poorly prepared reports lead to adjournments, mounting costs, and avoidable delays.
           </p>
           
           <div className="grid sm:grid-cols-3 gap-6 md:gap-8">
             {[
-              { stat: '€5K+', label: 'per-party costs when family cases face multiple adjournments', icon: '💰', ref: '1' },
-              { stat: '6+ mo', label: 'trial delays reported where psychiatric evidence is required', icon: '⏰', ref: '2' },
-              { stat: 'Rejected', label: 'Courts may refuse even uncontested expert reports', icon: '⚖️', ref: '3' },
+              { label: 'Inadequate forensic reports lead to mounting costs when family cases face multiple adjournments', icon: '💰' },
+              { label: 'Poorly prepared reports cause significant trial delays, particularly where psychiatric evidence is required', icon: '⏰' },
+              { label: 'Courts may refuse even uncontested expert reports that lack rigour', icon: '⚖️' },
             ].map((item, index) => (
               <div key={index} className="bg-white/5 backdrop-blur rounded-xl p-6">
                 <div className="text-4xl mb-3">{item.icon}</div>
-                <div className="text-3xl font-bold text-teal-light mb-2">{item.stat}</div>
-                <div className="text-sm text-white/60">{item.label}</div>
-                <div className="text-xs text-white/40 mt-2">[{item.ref}]</div>
+                <div className="text-sm text-white/70 leading-relaxed">{item.label}</div>
               </div>
             ))}
-          </div>
-
-          {/* References */}
-          <div className="mt-10 pt-6 border-t border-white/10 text-left max-w-2xl mx-auto">
-            <p className="text-xs text-white/40 mb-2 font-medium uppercase tracking-wider">Sources</p>
-            <ol className="text-xs text-white/50 space-y-1 list-decimal list-inside">
-              <li>
-                <a href="http://www.irishfather.com/costs-in-the-circuit-court-are-at-least-e-10000-per-person-and-can-exceed-e-50000-per-person/" target="_blank" rel="noopener noreferrer" className="hover:text-white/70 underline">
-                  Irish family law costs guide on Circuit Court proceedings
-                </a>
-              </li>
-              <li>
-                <a href="https://www.irishexaminer.com/news/arid-41595772.html" target="_blank" rel="noopener noreferrer" className="hover:text-white/70 underline">
-                  Irish Examiner: Criminal trials delayed by psychiatric report shortages
-                </a>
-              </li>
-              <li>
-                <a href="https://www.mhc.ie/latest/insights/expert-evidence-no-automatic-acceptance-if-unchallenged" target="_blank" rel="noopener noreferrer" className="hover:text-white/70 underline">
-                  Mason Hayes &amp; Curran: Expert evidence and Court of Appeal rulings
-                </a>
-              </li>
-            </ol>
           </div>
         </div>
       </section>
@@ -226,13 +213,13 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
             <span className="text-teal font-semibold text-sm tracking-wider uppercase mb-3 block">
-              Assessment Services
+              Forensic Assessment Services
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-navy mb-4 text-balance">
-              Comprehensive Reports for Every Court Context
+              Comprehensive Forensic Reports for Every Court Context
             </h2>
             <p className="text-navy/60 text-base md:text-lg">
-              Evidence-based assessments using validated instruments. Each report addresses 
+              Evidence-based forensic assessments using validated instruments. Each report addresses
               the specific questions posed by legal proceedings.
             </p>
           </div>
@@ -280,8 +267,8 @@ export default function HomePage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                 </svg>
               }
-              title="Risk Assessment"
-              description="Violence risk, sexual offence risk, self-harm evaluation"
+              title="Forensic Risk Assessment"
+              description="Violence risk, sexual offence risk, self-harm evaluation. Difficult to find clinicians who are qualified to do these reports — we have the specialists."
               href="/services#risk"
               features={['Violence risk', 'Sexual offence risk', 'Self-harm assessment']}
             />
@@ -292,22 +279,10 @@ export default function HomePage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                 </svg>
               }
-              title="Parenting Capacity"
-              description="PAMS assessments, capacity evaluation, support recommendations"
+              title="Parenting Capacity (S.37 / S.47 Reports)"
+              description="Family Law Section 37 & Section 47 reports. PAMS assessments, capacity evaluation, support recommendations"
               href="/services#parenting"
-              features={['PAMS assessments', 'Capacity evaluation', 'Recommendations']}
-            />
-            
-            <ServiceCard
-              icon={
-                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
-              }
-              title="Employment"
-              description="Harassment impact, fitness to work, discrimination cases"
-              href="/services#employment"
-              features={['Harassment impact', 'Fitness to work', 'Tribunal support']}
+              features={['S.37 / S.47 reports', 'PAMS assessments', 'Capacity evaluation']}
             />
           </div>
 
@@ -331,13 +306,13 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
             <div>
               <span className="text-teal font-semibold text-sm tracking-wider uppercase mb-3 block">
-                Why Expert Reports
+                Why Forensic Expert Reports
               </span>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-navy mb-6 text-balance">
-                Reports That Stand Up to Cross-Examination
+                Forensic Reports That Stand Up to Cross-Examination
               </h2>
               <p className="text-navy/60 text-base md:text-lg mb-8">
-                Our assessments are built on rigorous methodology, validated instruments, 
+                Our forensic assessments are built on rigorous methodology, validated instruments,
                 and extensive court experience. When challenged, they hold.
               </p>
               
@@ -350,13 +325,13 @@ export default function HomePage() {
                   },
                   {
                     title: 'Court-Ready Documentation',
-                    description: 'Clear, well-structured reports that address specific legal questions.',
+                    description: 'Clear, well-structured forensic reports that address specific legal questions.',
                     stat: '98% acceptance rate'
                   },
                   {
                     title: 'Rapid Turnaround',
-                    description: 'Standard delivery in 21 days. Expedited service available for urgent matters.',
-                    stat: '14-day expedited'
+                    description: 'We prioritise efficiency and aim to deliver your forensic report as quickly as possible. Expedited service available for urgent matters.',
+                    stat: 'Fast delivery'
                   },
                   {
                     title: 'Expert Witness Support',
@@ -455,53 +430,38 @@ export default function HomePage() {
               Built for Solicitors
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-navy mb-4 text-balance">
-              Reports That Make Your Job Easier
+              Forensic Reports That Make Your Job Easier
             </h2>
-            <p className="text-navy/60 text-base md:text-lg">
-              We understand the pressures of legal practice. Our process is designed to minimise 
-              your administrative burden while delivering court-ready reports.
-            </p>
           </div>
-          
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-grey-light rounded-xl p-6">
-              <div className="w-12 h-12 rounded-lg bg-teal/10 flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
+
+          <div className="max-w-3xl mx-auto space-y-6">
+            {[
+              {
+                step: '1',
+                text: 'We will source the appropriate expert witness on your behalf.',
+              },
+              {
+                step: '2',
+                text: 'We will engage with the expert & your client so you do not have to.',
+              },
+              {
+                step: '3',
+                text: 'We will arrange your client\u2019s consultations with the expert.',
+              },
+              {
+                step: '4',
+                text: 'We will prepare the invoice / Legal Aid claim forms.',
+              },
+            ].map((item, index) => (
+              <div key={index} className="flex items-start gap-4 p-5 bg-grey-light rounded-xl border border-grey card-hover">
+                <div className="w-10 h-10 rounded-full bg-teal/10 flex items-center justify-center flex-shrink-0">
+                  <span className="text-teal font-bold text-lg">{item.step}</span>
+                </div>
+                <p className="text-navy font-medium text-base md:text-lg leading-relaxed pt-1.5">
+                  {item.text}
+                </p>
               </div>
-              <h3 className="text-lg font-semibold text-navy mb-2">Quick Turnaround</h3>
-              <p className="text-navy/60 text-sm">
-                Standard 21-day delivery. Expedited options available for urgent matters. 
-                No chasing, no delays.
-              </p>
-            </div>
-            
-            <div className="bg-grey-light rounded-xl p-6">
-              <div className="w-12 h-12 rounded-lg bg-teal/10 flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                </svg>
-              </div>
-              <h3 className="text-lg font-semibold text-navy mb-2">Court-Standard Formats</h3>
-              <p className="text-navy/60 text-sm">
-                Reports structured to the formats judges expect. Clear conclusions, 
-                defensible methodology, properly referenced.
-              </p>
-            </div>
-            
-            <div className="bg-grey-light rounded-xl p-6">
-              <div className="w-12 h-12 rounded-lg bg-teal/10 flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
-                </svg>
-              </div>
-              <h3 className="text-lg font-semibold text-navy mb-2">Legal Aid Compatible</h3>
-              <p className="text-navy/60 text-sm">
-                Familiar with Legal Aid Board processes. We handle the paperwork 
-                requirements so you can focus on your case.
-              </p>
-            </div>
+            ))}
           </div>
         </div>
       </section>
@@ -514,55 +474,52 @@ export default function HomePage() {
               Simple Process
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-balance text-white">
-              From Instruction to Delivery in 4 Steps
+              Solicitor Forensic Expert Reports
             </h2>
             <p className="text-white/70 text-base md:text-lg">
-              A structured, transparent process designed for the demands of legal practice.
+              A straightforward process designed to minimise your involvement.
             </p>
           </div>
-          
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+
+          <div className="grid sm:grid-cols-3 gap-6 md:gap-8">
             {[
               {
                 step: '01',
-                title: 'Free Consultation',
-                description: 'Discuss your case. We\'ll recommend the right assessment type.',
-                time: 'Same day'
+                title: 'Contact Us',
+                description: 'Provide us with the book of evidence and other relevant materials. We will provide you with an invoice/bill by return for Legal Aid sanction.',
               },
               {
                 step: '02',
-                title: 'Assessment',
-                description: 'Comprehensive evaluation using validated instruments.',
-                time: '1-3 sessions'
+                title: 'Sanction Received',
+                description: 'Once you have received & provided us with sanction, we will commence.',
               },
               {
                 step: '03',
-                title: 'Analysis',
-                description: 'Integration of findings with relevant literature.',
-                time: '5-7 days'
+                title: 'Report Delivered',
+                description: 'Once the forensic report is completed, we will send you a copy together with Legal Aid claim forms.',
               },
-              {
-                step: '04',
-                title: 'Delivery',
-                description: 'Detailed report addressing all questions posed.',
-                time: '21 days total'
-              }
             ].map((item, index) => (
               <div key={index} className="relative">
                 <div className="text-5xl font-bold text-teal/20 mb-3">{item.step}</div>
                 <h3 className="text-lg font-semibold mb-2 text-white">{item.title}</h3>
                 <p className="text-white/60 text-sm mb-3">{item.description}</p>
-                <span className="text-xs font-medium text-teal-light">{item.time}</span>
-                
+
                 {/* Connector line on larger screens */}
-                {index < 3 && (
+                {index < 2 && (
                   <div className="hidden lg:block absolute top-8 left-full w-full h-px bg-white/10" style={{ width: 'calc(100% - 2rem)', left: '80%' }} />
                 )}
               </div>
             ))}
           </div>
-          
-          <div className="text-center mt-10">
+
+          {/* Disclaimer */}
+          <div className="text-center mt-10 max-w-2xl mx-auto">
+            <p className="text-white/50 text-xs italic">
+              (Note: It is responsibility of solicitor to instruct legal aid and claims to recover medical report fees from client)
+            </p>
+          </div>
+
+          <div className="text-center mt-8">
             <Link
               href="/process"
               className="inline-flex items-center gap-2 text-teal-light font-semibold hover:gap-3 transition-all"
@@ -588,10 +545,10 @@ export default function HomePage() {
           </div>
 
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-navy mb-4 text-balance">
-            Need a Report for Your Client?
+            Need a Forensic Report for Your Client?
           </h2>
           <p className="text-navy/60 text-base md:text-lg mb-8 max-w-2xl mx-auto">
-            Tell us about your case and we&apos;ll recommend the right assessment approach. 
+            Tell us about your case and we&apos;ll recommend the right forensic assessment approach.
             Quick consultation, clear quote, no obligation to proceed.
           </p>
           
