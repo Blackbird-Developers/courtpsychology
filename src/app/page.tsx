@@ -261,7 +261,7 @@ export default function HomePage() {
               title="Criminal Court"
               description="Pre-sentencing reports, fitness to plead, mental state assessments"
               href="/services#criminal"
-              features={['Pre-sentencing reports', 'Fitness to plead', 'Mental state at offence']}
+              features={['Pre-sentencing reports', 'Fitness to plead', 'Mental state at offence', 'Quick turnaround', 'Legal Aid & private clients', 'Nationwide']}
             />
             
             <ServiceCard
@@ -271,9 +271,9 @@ export default function HomePage() {
                 </svg>
               }
               title="Family Law"
-              description="Section 32/47 reports, custody evaluations, Voice of the Child. Quick turnaround, nationwide service."
+              description="Section 32/47 reports, custody evaluations, access arrangements"
               href="/services#family"
-              features={['Section 32/47 reports', 'Voice of the Child', 'Custody evaluations', 'Nationwide']}
+              features={['Section 32/47 reports', 'Custody evaluations', 'Voice of the Child', 'Quick turnaround', 'Nationwide']}
             />
             
             <ServiceCard
