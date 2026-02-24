@@ -195,12 +195,33 @@ export default function HomePage() {
           
           <div className="grid sm:grid-cols-3 gap-6 md:gap-8">
             {[
-              { label: 'Inadequate forensic reports lead to mounting costs when family cases face multiple adjournments', icon: '💰' },
-              { label: 'Poorly prepared reports cause significant trial delays, particularly where psychiatric evidence is required', icon: '⏰' },
-              { label: 'Courts may refuse even uncontested expert reports that lack rigour', icon: '⚖️' },
+              {
+                label: 'Inadequate forensic reports lead to mounting costs when family cases face multiple adjournments',
+                icon: (
+                  <svg className="w-10 h-10 text-teal-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                ),
+              },
+              {
+                label: 'Poorly prepared reports cause significant trial delays, particularly where psychiatric evidence is required',
+                icon: (
+                  <svg className="w-10 h-10 text-teal-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                ),
+              },
+              {
+                label: 'Courts may refuse even uncontested expert reports that lack rigour',
+                icon: (
+                  <svg className="w-10 h-10 text-teal-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+                  </svg>
+                ),
+              },
             ].map((item, index) => (
               <div key={index} className="bg-white/5 backdrop-blur rounded-xl p-6">
-                <div className="text-4xl mb-3">{item.icon}</div>
+                <div className="mb-3 flex justify-center">{item.icon}</div>
                 <div className="text-sm text-white/70 leading-relaxed">{item.label}</div>
               </div>
             ))}
