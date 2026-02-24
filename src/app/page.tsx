@@ -309,7 +309,7 @@ export default function HomePage() {
               title="Parenting Capacity"
               description="PAMS assessments, capacity evaluations, and support recommendations for child protection and family welfare proceedings."
               href="/services#parenting"
-              features={['PAMS assessments', 'Capacity evaluation', 'Kinship assessments', 'Nationwide']}
+              features={['PAMS assessments', 'Capacity evaluation', 'Kinship assessments', 'Quick turnaround', 'Nationwide']}
             />
           </div>
 
