@@ -2,7 +2,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Services | Expert Reports',
+  title: 'Forensic Assessment Services | Expert Reports',
   description: 'Comprehensive forensic psychological assessment services for Irish courts including criminal, family law, medico-legal, risk assessments, and parenting capacity evaluations.',
 };
 
@@ -118,7 +118,7 @@ const serviceSections: ServiceSection[] = [
   },
   {
     id: 'risk',
-    title: 'Risk Assessments',
+    title: 'Forensic Risk Assessments',
     subtitle: 'Structured Professional Judgement',
     description: 'Systematic risk evaluations using internationally validated structured professional judgement tools, providing defensible opinions on risk of violence, sexual offending, and self-harm.',
     services: [

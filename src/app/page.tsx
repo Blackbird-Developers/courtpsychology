@@ -36,7 +36,7 @@ export default function HomePage() {
 
               {/* Headline - Solicitor-focused */}
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] font-bold text-navy leading-[1.1] mb-5 text-balance">
-                Court-Ready Forensic Reports,{' '}
+                Court-Ready Forensic Psychological Reports,{' '}
                 <span className="relative">
                   <span className="relative z-10">Fast &amp; Reliable</span>
                   <span className="absolute bottom-1 left-0 right-0 h-3 bg-teal/20 -z-0" />
@@ -46,7 +46,7 @@ export default function HomePage() {
               {/* Subheadline - Speed, reliability, ease for solicitors */}
               <p className="text-base sm:text-lg md:text-xl text-navy/70 leading-relaxed mb-6 max-w-xl">
                 Independent forensic psychological assessments.{' '}
-                Standard formats judges expect. Legal Aid compatible. Hassle-free process from instruction to delivery.
+                Standard formats judges expect. Legal Aid &amp; private clients catered for. Hassle-free process from instruction to delivery.
               </p>
 
               {/* Key benefits - scannable, solicitor-focused */}
@@ -67,7 +67,13 @@ export default function HomePage() {
                   <svg className="w-5 h-5 text-teal flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  <span><strong>Legal Aid</strong> compatible</span>
+                  <span><strong>Legal Aid</strong> &amp; private clients</span>
+                </div>
+                <div className="flex items-center gap-2 text-navy/80">
+                  <svg className="w-5 h-5 text-teal flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  <span><strong>Nationwide</strong> service</span>
                 </div>
               </div>
               
@@ -186,7 +192,7 @@ export default function HomePage() {
       <section className="py-16 md:py-24 bg-navy">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-balance text-white">
-            Inadequate Forensic Reports Jeopardise Your Case
+            Reports That Fail Court Standards Jeopardise Your Case
           </h2>
           <p className="text-lg md:text-xl text-white/70 mb-10 max-w-2xl mx-auto">
             Irish courts can reject forensic expert evidence that lacks independence or methodological rigour.
@@ -265,9 +271,9 @@ export default function HomePage() {
                 </svg>
               }
               title="Family Law"
-              description="Section 32/47 reports, custody evaluations, voice of the child"
+              description="Section 32/47 reports, custody evaluations, Voice of the Child. Quick turnaround, nationwide service."
               href="/services#family"
-              features={['Section 32/47 reports', 'Custody evaluations', 'Access arrangements']}
+              features={['Section 32/47 reports', 'Voice of the Child', 'Custody evaluations', 'Nationwide']}
             />
             
             <ServiceCard
@@ -300,10 +306,10 @@ export default function HomePage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                 </svg>
               }
-              title="Parenting Capacity (S.37 / S.47 Reports)"
-              description="Family Law Section 37 & Section 47 reports. PAMS assessments, capacity evaluation, support recommendations"
+              title="Parenting Capacity"
+              description="PAMS assessments, capacity evaluations, and support recommendations for child protection and family welfare proceedings."
               href="/services#parenting"
-              features={['S.37 / S.47 reports', 'PAMS assessments', 'Capacity evaluation']}
+              features={['PAMS assessments', 'Capacity evaluation', 'Kinship assessments', 'Nationwide']}
             />
           </div>
 
@@ -346,8 +352,8 @@ export default function HomePage() {
                   },
                   {
                     title: 'Court-Ready Documentation',
-                    description: 'Clear, well-structured forensic reports that address specific legal questions.',
-                    stat: '98% acceptance rate'
+                    description: 'Clear, well-structured forensic reports in standard court format.',
+                    stat: 'High acceptance rate'
                   },
                   {
                     title: 'Rapid Turnaround',
@@ -612,7 +618,7 @@ export default function HomePage() {
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span>Legal Aid compatible</span>
+              <span>Legal Aid &amp; private clients</span>
             </div>
           </div>
         </div>

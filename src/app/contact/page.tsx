@@ -171,8 +171,8 @@ export default function ContactPage() {
               Get Your Free Consultation
             </h1>
             <p className="text-navy/60 text-base sm:text-lg md:text-xl leading-relaxed">
-              Tell us about your case and we&apos;ll recommend the right assessment approach. 
-              No obligation, completely confidential.
+              Tell us about your case and we&apos;ll recommend the right forensic assessment approach.
+              Legal Aid &amp; private clients welcome. No obligation, completely confidential.
             </p>
           </div>
         </div>

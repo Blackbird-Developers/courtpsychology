@@ -2,8 +2,8 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Our Process | Expert Reports',
-  description: 'Learn about our structured assessment process from initial instruction through to report delivery and court attendance.',
+  title: 'Our Forensic Assessment Process | Expert Reports',
+  description: 'Learn about our structured forensic assessment process from initial instruction through to report delivery and court attendance.',
 };
 
 export default function ProcessPage() {
@@ -139,8 +139,8 @@ export default function ProcessPage() {
               <div className="text-sm text-navy/60">Days standard turnaround</div>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-bold text-navy">14</div>
-              <div className="text-sm text-navy/60">Days expedited available</div>
+              <div className="text-3xl md:text-4xl font-bold text-navy">Fast</div>
+              <div className="text-sm text-navy/60">Expedited service available</div>
             </div>
             <div>
               <div className="text-3xl md:text-4xl font-bold text-navy">24hr</div>
@@ -270,7 +270,7 @@ export default function ProcessPage() {
                   </li>
                   <li className="flex items-center justify-between pb-4 border-b border-white/10">
                     <span className="text-white/80">Report delivered</span>
-                    <span className="font-semibold text-teal-light">Within 14 days</span>
+                    <span className="font-semibold text-teal-light">As fast as possible</span>
                   </li>
                   <li className="flex items-center justify-between">
                     <span className="text-white/80">Court attendance</span>

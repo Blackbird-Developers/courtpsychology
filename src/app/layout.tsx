@@ -8,13 +8,13 @@ import { FloatingCTA } from "@/components/FloatingCTA";
 import { ExitIntentModal } from "@/components/ExitIntentModal";
 
 export const metadata: Metadata = {
-  title: "Expert Reports | Independent Psychological Assessments for Irish Courts",
+  title: "Expert Reports | Independent Forensic Psychological Assessments for Irish Courts",
   description: "Expert forensic psychological assessments for criminal, family, and civil courts in Ireland. 21-day turnaround. Legal Aid compatible. PSI registered clinicians.",
   keywords: "forensic psychology, court reports, psychological assessment, Ireland, solicitors, family law, criminal court, medico-legal, expert witness, Legal Aid",
   authors: [{ name: "Expert Reports" }],
   openGraph: {
-    title: "Expert Reports | Court-Ready Psychological Reports for Solicitors",
-    description: "Independent psychological assessments for Irish courts. 21-day turnaround. Legal Aid compatible. Standard formats judges expect.",
+    title: "Expert Reports | Court-Ready Forensic Psychological Reports for Solicitors",
+    description: "Independent forensic psychological assessments for Irish courts. 21-day turnaround. Legal Aid & private clients catered for. Standard formats judges expect.",
     url: "https://expertreports.ie",
     siteName: "Expert Reports",
     locale: "en_IE",
@@ -22,8 +22,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Expert Reports | Court-Ready Reports for Solicitors",
-    description: "Independent psychological assessments for Irish courts. 21-day turnaround. Legal Aid compatible.",
+    title: "Expert Reports | Court-Ready Forensic Reports for Solicitors",
+    description: "Independent forensic psychological assessments for Irish courts. 21-day turnaround. Legal Aid & private clients catered for.",
   },
   robots: {
     index: true,
