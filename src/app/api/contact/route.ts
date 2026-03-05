@@ -59,7 +59,7 @@ export async function POST(request: Request) {
       },
       body: JSON.stringify({
         from: process.env.RESEND_FROM || 'onboarding@resend.dev',
-        to: 'info@expertreports.ie',
+        to: process.env.RESEND_TO || 'info@expertreports.ie',
         reply_to: email,
         subject: `New Enquiry: ${caseTypeLabels[caseType] || caseType} — ${name}`,
         html: htmlBody,
