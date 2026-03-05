@@ -1,5 +1,4 @@
 import { NextResponse } from 'next/server';
-import nodemailer from 'nodemailer';
 
 export async function POST(request: Request) {
   try {
@@ -13,27 +12,13 @@ export async function POST(request: Request) {
       );
     }
 
-    if (!process.env.SMTP_HOST || !process.env.SMTP_USER || !process.env.SMTP_PASS) {
-      console.error('Missing SMTP env vars:', {
-        host: !!process.env.SMTP_HOST,
-        user: !!process.env.SMTP_USER,
-        pass: !!process.env.SMTP_PASS,
-      });
+    if (!process.env.RESEND_API_KEY) {
+      console.error('Missing RESEND_API_KEY env var');
       return NextResponse.json(
         { error: 'Email service is not configured. Please contact us directly at info@expertreports.ie.' },
         { status: 500 }
       );
     }
-
-    const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST,
-      port: Number(process.env.SMTP_PORT) || 587,
-      secure: Number(process.env.SMTP_PORT) === 465,
-      auth: {
-        user: process.env.SMTP_USER,
-        pass: process.env.SMTP_PASS,
-      },
-    });
 
     const caseTypeLabels: Record<string, string> = {
       criminal: 'Criminal Court Assessment',
@@ -66,13 +51,30 @@ export async function POST(request: Request) {
       </table>
     `;
 
-    await transporter.sendMail({
-      from: process.env.SMTP_FROM || 'noreply@expertreports.ie',
-      to: 'info@expertreports.ie',
-      replyTo: email,
-      subject: `New Enquiry: ${caseTypeLabels[caseType] || caseType} — ${name}`,
-      html: htmlBody,
+    const res = await fetch('https://api.resend.com/emails', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
+      },
+      body: JSON.stringify({
+        from: process.env.RESEND_FROM || 'onboarding@resend.dev',
+        to: 'info@expertreports.ie',
+        reply_to: email,
+        subject: `New Enquiry: ${caseTypeLabels[caseType] || caseType} — ${name}`,
+        html: htmlBody,
+      }),
     });
+
+    const data = await res.json();
+
+    if (!res.ok) {
+      console.error('Resend API error:', data);
+      return NextResponse.json(
+        { error: `Failed to send enquiry: ${data.message || 'Unknown error'}` },
+        { status: 500 }
+      );
+    }
 
     return NextResponse.json({ success: true });
   } catch (error) {
