@@ -7,7 +7,7 @@ export function Footer() {
     { href: '/services#criminal', label: 'Criminal Court Assessments' },
     { href: '/services#family', label: 'Family Law Reports' },
     { href: '/services#medicolegal', label: 'Medico-Legal Reports' },
-    { href: '/services#risk', label: 'Risk Assessments' },
+    { href: '/services#risk', label: 'Forensic Risk Assessments' },
     { href: '/services#parenting', label: 'Parenting Capacity' },
   ];
 

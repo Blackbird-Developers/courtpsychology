@@ -18,15 +18,15 @@ const caseTypes = [
   { value: 'criminal', label: 'Criminal Court Assessment' },
   { value: 'family', label: 'Family Law Report' },
   { value: 'medicolegal', label: 'Medico-Legal Report' },
-  { value: 'risk', label: 'Risk Assessment' },
+  { value: 'risk', label: 'Forensic Risk Assessment' },
   { value: 'parenting', label: 'Parenting Capacity Assessment' },
   { value: 'employment', label: 'Workplace/Employment' },
   { value: 'other', label: 'Other / Not Sure' },
 ];
 
 const urgencyOptions = [
-  { value: 'standard', label: 'Standard (21 days)', badge: null },
-  { value: 'priority', label: 'Priority (14 days)', badge: 'Most popular' },
+  { value: 'standard', label: 'Standard (28 days)', badge: null },
+  { value: 'priority', label: 'Priority (21 days)', badge: 'Most popular' },
   { value: 'urgent', label: 'Urgent (discuss timeline)', badge: null },
   { value: 'undecided', label: 'Not yet determined', badge: null },
 ];
@@ -103,13 +103,26 @@ export default function ContactPage() {
     if (!validateStep(3)) return;
     
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-    sessionStorage.removeItem('formStarted');
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      if (!res.ok) {
+        const data = await res.json();
+        throw new Error(data.error || 'Failed to send enquiry');
+      }
+
+      setIsSubmitted(true);
+      sessionStorage.removeItem('formStarted');
+    } catch (err) {
+      alert(err instanceof Error ? err.message : 'Something went wrong. Please try again or email info@expertreports.ie directly.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   if (isSubmitted) {
