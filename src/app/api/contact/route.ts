@@ -13,6 +13,18 @@ export async function POST(request: Request) {
       );
     }
 
+    if (!process.env.SMTP_HOST || !process.env.SMTP_USER || !process.env.SMTP_PASS) {
+      console.error('Missing SMTP env vars:', {
+        host: !!process.env.SMTP_HOST,
+        user: !!process.env.SMTP_USER,
+        pass: !!process.env.SMTP_PASS,
+      });
+      return NextResponse.json(
+        { error: 'Email service is not configured. Please contact us directly at info@expertreports.ie.' },
+        { status: 500 }
+      );
+    }
+
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
       port: Number(process.env.SMTP_PORT) || 587,
@@ -64,9 +76,10 @@ export async function POST(request: Request) {
 
     return NextResponse.json({ success: true });
   } catch (error) {
-    console.error('Contact form error:', error);
+    const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+    console.error('Contact form error:', errorMessage);
     return NextResponse.json(
-      { error: 'Failed to send enquiry. Please try again or email us directly.' },
+      { error: `Failed to send enquiry: ${errorMessage}` },
       { status: 500 }
     );
   }
