@@ -335,6 +335,17 @@ export default function ProcessPage() {
                 <p className="text-navy/60 text-sm leading-relaxed">{item.a}</p>
               </div>
             ))}
+
+            {/* Legal Aid cross-reference */}
+            <div className="mt-8 bg-teal/5 border border-teal/20 rounded-xl p-6 text-center">
+              <h3 className="font-semibold text-navy mb-2">Working with Legal Aid?</h3>
+              <p className="text-navy/60 text-sm mb-4">
+                See our step-by-step Legal Aid guide for solicitors, including downloadable EW1 and LA5 forms.
+              </p>
+              <Link href="/resources#legal-aid-process" className="text-teal font-semibold text-sm hover:text-teal-dark transition-colors">
+                View Legal Aid Guide &rarr;
+              </Link>
+            </div>
           </div>
         </div>
       </section>

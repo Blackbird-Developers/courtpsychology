@@ -38,6 +38,7 @@ export function Header() {
     { href: '/services', label: 'Services' },
     { href: '/about', label: 'About' },
     { href: '/process', label: 'Process' },
+    { href: '/resources', label: 'Resources' },
     { href: '/contact', label: 'Contact' },
   ];
 

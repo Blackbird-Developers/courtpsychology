@@ -14,6 +14,7 @@ export function Footer() {
   const company = [
     { href: '/about', label: 'About Us' },
     { href: '/process', label: 'Our Process' },
+    { href: '/resources', label: 'Resources' },
     { href: '/contact', label: 'Contact' },
   ];
 
