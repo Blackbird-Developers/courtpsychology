@@ -56,7 +56,7 @@ export function FloatingCTA() {
             </Link>
 
             <a
-              href="tel:+35316123456"
+              href="tel:+353860419300"
               className="flex items-center gap-3 p-3 rounded-lg hover:bg-grey-light transition-colors group"
               onClick={() => setIsExpanded(false)}
             >
@@ -67,7 +67,7 @@ export function FloatingCTA() {
               </div>
               <div>
                 <div className="font-medium text-navy">Call Directly</div>
-                <div className="text-xs text-navy/60">+353 1 612 3456</div>
+                <div className="text-xs text-navy/60">+353 86 041 9300</div>
               </div>
             </a>
 
