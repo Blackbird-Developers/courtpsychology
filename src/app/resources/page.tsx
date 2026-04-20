@@ -62,9 +62,7 @@ export default function ResourcesPage() {
       details: [
         'Final report delivered securely',
         'LA5 Form provided with the report',
-        'You sign and return the LA5 to us',
-        'We submit directly to the DOJ for payment',
-        'No invoice to your firm — the DOJ pays us directly',
+        'Send LA5 form to DOJ for payment to be processed',
       ],
     },
   ];
