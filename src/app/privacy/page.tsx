@@ -58,8 +58,8 @@ export default function PrivacyPage() {
                 </p>
                 <p className="text-navy/70 text-sm">
                   Phone:{' '}
-                  <a href="tel:+353860419300" className="text-teal hover:underline">
-                    +353 86 041 9300
+                  <a href="tel:+353894227939" className="text-teal hover:underline">
+                    +353 89 422 7939
                   </a>
                 </p>
               </div>
@@ -475,8 +475,8 @@ export default function PrivacyPage() {
                 </p>
                 <p className="text-navy/70 text-sm mb-1">
                   Phone:{' '}
-                  <a href="tel:+353860419300" className="text-teal hover:underline">
-                    +353 86 041 9300
+                  <a href="tel:+353894227939" className="text-teal hover:underline">
+                    +353 89 422 7939
                   </a>
                 </p>
                 <p className="text-navy/70 text-sm">Address: Dublin, Ireland</p>

@@ -52,7 +52,7 @@ export function StickyMobileCTA() {
 
         {/* Phone shortcut */}
         <a
-          href="tel:+353860419300"
+          href="tel:+353894227939"
           className="w-11 h-11 flex-shrink-0 flex items-center justify-center rounded-lg border-2 border-navy text-navy hover:bg-navy hover:text-white transition-colors"
           aria-label="Call us"
         >

@@ -517,7 +517,7 @@ export default function ContactPage() {
               <div className="bg-white rounded-2xl p-6 border border-grey">
                 <h3 className="text-lg font-bold text-navy mb-5">Prefer to Call?</h3>
                 <a 
-                  href="tel:+353860419300"
+                  href="tel:+353894227939"
                   className="flex items-center gap-4 p-4 rounded-xl bg-navy text-white hover:bg-navy-light transition-colors group"
                 >
                   <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
@@ -526,7 +526,7 @@ export default function ContactPage() {
                     </svg>
                   </div>
                   <div>
-                    <div className="font-semibold">+353 86 041 9300</div>
+                    <div className="font-semibold">+353 89 422 7939</div>
                     <div className="text-sm text-white/70">Mon-Fri, 9:00-17:30</div>
                   </div>
                 </a>
