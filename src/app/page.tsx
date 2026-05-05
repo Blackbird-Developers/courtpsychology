@@ -31,7 +31,7 @@ export default function HomePage() {
               
               {/* Tagline */}
               <p className="text-teal font-semibold text-sm sm:text-base tracking-wider uppercase mb-4">
-                We Engage With The Expert Witness So You Don&apos;t Have To
+                We coordinate with the expert witness on your behalf, while you remain the instructing solicitor.
               </p>
 
               {/* Headline - Solicitor-focused */}
@@ -83,7 +83,7 @@ export default function HomePage() {
                   href="/contact"
                   className="btn btn-primary btn-lg group"
                 >
-                  <span>Request a Report for Your Client</span>
+                  <span>Request a Quotation</span>
                   <svg className="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
@@ -138,8 +138,8 @@ export default function HomePage() {
                       <div className="text-[10px] text-navy/60 uppercase tracking-wider">Days</div>
                     </div>
                     <div className="text-center border-x border-grey">
-                      <div className="text-lg font-bold text-teal">Approved</div>
-                      <div className="text-[10px] text-navy/60 uppercase tracking-wider">Status</div>
+                      <div className="text-lg font-bold text-teal">Sanction</div>
+                      <div className="text-[10px] text-navy/60 uppercase tracking-wider">Requested</div>
                     </div>
                     <div className="text-center">
                       <div className="text-lg font-bold text-navy">32</div>
@@ -158,7 +158,7 @@ export default function HomePage() {
                     <svg className="w-5 h-5 text-teal" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
-                    <span className="text-xs font-medium text-navy">Legal Aid Board Compatible</span>
+                    <span className="text-xs font-medium text-navy">Supports Criminal Legal Aid Process</span>
                   </div>
                 </div>
               </div>
@@ -331,8 +331,8 @@ export default function HomePage() {
                   },
                   {
                     title: 'Court-Ready Documentation',
-                    description: 'Clear, well-structured forensic reports in standard court format.',
-                    stat: 'High acceptance rate'
+                    description: 'Clear, well-structured forensic reports prepared in a court-ready format to assist solicitors and the court.',
+                    stat: 'Court-ready format'
                   },
                   {
                     title: 'Rapid Turnaround',
@@ -444,11 +444,11 @@ export default function HomePage() {
             {[
               {
                 step: '1',
-                text: 'We will source the appropriate expert witness on your behalf.',
+                text: 'We assist in identifying and coordinating with a suitable expert, who is instructed by the solicitor.',
               },
               {
                 step: '2',
-                text: 'We will engage with the expert & your client so you do not have to.',
+                text: 'We support communication between your office, the expert, and your client to keep the assessment moving.',
               },
               {
                 step: '3',
@@ -456,7 +456,7 @@ export default function HomePage() {
               },
               {
                 step: '4',
-                text: 'We will prepare the invoice / Legal Aid claim forms.',
+                text: 'We provide the expert\u2019s quotation/invoice information and supporting documentation to assist your office with Legal Aid sanction and claim submission.',
               },
             ].map((item, index) => (
               <div key={index} className="flex items-start gap-4 p-5 bg-grey-light rounded-xl border border-grey card-hover">
@@ -492,17 +492,17 @@ export default function HomePage() {
               {
                 step: '01',
                 title: 'Contact Us',
-                description: 'Provide us with the book of evidence and other relevant materials. We will provide you with an invoice/bill by return for Legal Aid sanction.',
+                description: 'Provide us with the book of evidence and other relevant materials. We will provide a detailed quotation for the proposed expert witness work to assist your application for prior Legal Aid sanction.',
               },
               {
                 step: '02',
-                title: 'Sanction Received',
+                title: 'Awaiting Sanction',
                 description: 'Once you have received & provided us with sanction, we will commence.',
               },
               {
                 step: '03',
                 title: 'Report Delivered',
-                description: 'Once the forensic report is completed, we will send you a copy together with Legal Aid claim forms.',
+                description: 'Once the forensic report is completed, we will send you a copy together with documentation to support your Legal Aid claim.',
               },
             ].map((item, index) => (
               <div key={index} className="relative">
@@ -551,11 +551,11 @@ export default function HomePage() {
           </div>
 
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-navy mb-4 text-balance">
-            Need a Forensic Report for Your Client?
+            Need to Arrange an Expert Assessment?
           </h2>
           <p className="text-navy/60 text-base md:text-lg mb-8 max-w-2xl mx-auto">
-            Tell us about your case and we&apos;ll recommend the right forensic assessment approach.
-            Quick consultation, clear quote, no obligation to proceed.
+            Tell us about your case and we&apos;ll help coordinate the right forensic assessment with an
+            independent clinician. Quick consultation, clear quotation, no obligation to proceed.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
@@ -563,7 +563,7 @@ export default function HomePage() {
               href="/contact"
               className="btn btn-primary btn-lg"
             >
-              Request a Report
+              Submit a Referral
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
@@ -600,6 +600,18 @@ export default function HomePage() {
               <span>Legal Aid &amp; private clients</span>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Role disclaimer */}
+      <section className="py-10 md:py-12 bg-white border-t border-grey">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-navy/60 text-sm leading-relaxed text-center">
+            Expert Reports provides coordination and administrative support to solicitors arranging
+            expert assessments and reports. The instructing solicitor remains responsible for
+            instructing the expert witness, seeking any required sanction, and submitting claims.
+            All reports are prepared independently by qualified clinicians.
+          </p>
         </div>
       </section>
     </>

@@ -261,8 +261,9 @@ export default function ServicesPage() {
               Comprehensive Forensic Psychological Services
             </h1>
             <p className="text-navy/60 text-lg md:text-xl leading-relaxed">
-              Evidence-based assessments for criminal, family, and civil court proceedings. 
-              Each service is delivered with the rigour and impartiality required by the Irish legal system.
+              We coordinate the preparation of psychological reports by independent clinicians for criminal,
+              family, and civil court proceedings. We support and coordinate the process from referral
+              through to report delivery, while the solicitor retains full control of instruction and oversight.
             </p>
           </div>
           
@@ -336,7 +337,7 @@ export default function ServicesPage() {
                     href="/contact"
                     className="block w-full bg-teal text-white text-center py-3 rounded-lg font-semibold hover:bg-teal-light transition-colors"
                   >
-                    Request This Assessment
+                    Request a Quotation
                   </Link>
                 </div>
               </div>

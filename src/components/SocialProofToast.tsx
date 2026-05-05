@@ -11,7 +11,7 @@ interface ProofItem {
 const proofItems: ProofItem[] = [
   { message: 'Assessment slot available', detail: 'Next available: within 3 business days' },
   { message: 'Report turnaround', detail: 'Standard delivery: 21 days from assessment' },
-  { message: 'Legal Aid compatible', detail: 'We handle the paperwork requirements' },
+  { message: 'Supports Criminal Legal Aid', detail: 'Documentation provided for sanction applications and claims' },
   { message: 'PSI registered clinicians', detail: 'Qualified forensic psychologists' },
   { message: 'Expedited service available', detail: '14-day turnaround for urgent matters' },
 ];

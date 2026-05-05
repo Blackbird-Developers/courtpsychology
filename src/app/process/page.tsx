@@ -12,12 +12,12 @@ export default function ProcessPage() {
       number: '01',
       title: 'Initial Enquiry',
       duration: 'Day 1',
-      description: 'Contact us with case details. We respond within 24 hours to discuss requirements, confirm suitability, and provide a fee estimate.',
+      description: 'Contact us with case details. We respond within 24 hours to discuss requirements, confirm suitability, and provide a quotation to support any Legal Aid sanction application.',
       details: [
         'Brief case overview via phone or email',
         'Confirmation of assessment type required',
         'Discussion of timeline requirements',
-        'Fee estimate provided',
+        'Quotation provided to support Legal Aid sanction request',
         'Conflict of interest check completed'
       ]
     },
@@ -25,12 +25,12 @@ export default function ProcessPage() {
       number: '02',
       title: 'Formal Instruction',
       duration: 'Day 2-3',
-      description: 'Following acceptance, formal instruction is received along with relevant documentation and specific questions to be addressed.',
+      description: 'Following acceptance, the solicitor formally instructs the expert. Relevant documentation and specific questions to be addressed are provided.',
       details: [
-        'Letter of instruction received',
+        'Letter of instruction issued by solicitor to the expert',
         'Specific questions for opinion documented',
         'Relevant records provided (medical, legal, etc.)',
-        'Fee agreement confirmed',
+        'Quotation accepted and Legal Aid sanction confirmed where applicable',
         'Assessment appointment scheduled'
       ]
     },
@@ -96,7 +96,7 @@ export default function ProcessPage() {
         'Hard copies provided if required',
         'Clarification of findings available',
         'Supplementary questions addressed',
-        'Invoice submitted'
+        'Itemised invoice provided to support Legal Aid claim'
       ]
     },
     {
@@ -323,7 +323,7 @@ export default function ProcessPage() {
               },
               {
                 q: 'How are fees structured?',
-                a: 'Fees are quoted on a per-assessment basis and include all professional time from instruction through to report delivery. Court attendance is charged separately at a daily rate. Fee estimates are provided at the enquiry stage.'
+                a: 'A detailed quotation is provided at the enquiry stage to support any Legal Aid sanction application. A final itemised invoice is then issued based on actual hours worked, covering professional time from instruction through to report delivery. Court attendance is charged separately at a daily rate.'
               },
               {
                 q: 'What is your cancellation policy?',

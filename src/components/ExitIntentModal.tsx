@@ -100,7 +100,7 @@ export function ExitIntentModal() {
           </div>
 
           <h2 id="exit-modal-title" className="text-2xl font-bold text-navy mb-2">
-            Need a Report for Your Client?
+            Need an Expert Assessment for Your Client?
           </h2>
           <p className="text-navy/60">
             Get a quick quote and discuss your case requirements before you go.
@@ -154,7 +154,7 @@ export function ExitIntentModal() {
               className="btn btn-primary btn-block btn-lg"
               onClick={handleClose}
             >
-              Request a Report
+              Request a Quotation
             </Link>
             <button
               onClick={handleClose}

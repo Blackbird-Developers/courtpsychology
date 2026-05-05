@@ -111,7 +111,7 @@ export function Header() {
               href="/contact"
               className="btn btn-primary ml-2"
             >
-              <span className="hidden xl:inline">Request a Report</span>
+              <span className="hidden xl:inline">Request a Quotation</span>
               <span className="xl:hidden">Get Quote</span>
             </Link>
           </div>
@@ -200,7 +200,7 @@ export function Header() {
                 className="btn btn-primary btn-lg btn-block"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Request a Report
+                Request a Quotation
               </Link>
               <a
                 href="tel:+353894227939"

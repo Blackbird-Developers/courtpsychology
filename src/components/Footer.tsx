@@ -30,8 +30,8 @@ export function Footer() {
               <span className="text-2xl font-medium tracking-tight">Reports</span>
             </div>
             <p className="text-white/70 text-sm leading-relaxed mb-6">
-              Independent forensic psychological assessments for Irish courts.
-              Rigorous, evidence-based forensic evaluations accepted nationwide.
+              Coordination of independent forensic psychological assessments for Irish courts.
+              Rigorous, evidence-based evaluations prepared in court-ready format, available nationwide.
             </p>
             <p className="text-teal-light font-medium text-sm">
               Insight That Stands in Court.
