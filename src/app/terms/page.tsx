@@ -46,8 +46,8 @@ export default function TermsPage() {
                   info@expertreports.ie
                 </a>{' '}
                 or calling us on{' '}
-                <a href="tel:+353894227939" className="text-teal hover:underline">
-                  +353 89 422 7939
+                <a href="tel:+353860419300" className="text-teal hover:underline">
+                  +353 86 041 9300
                 </a>.
               </p>
             </div>
@@ -324,8 +324,8 @@ export default function TermsPage() {
                     info@expertreports.ie
                   </a>{' '}
                   or call us on{' '}
-                  <a href="tel:+353894227939" className="text-teal hover:underline">
-                    +353 89 422 7939
+                  <a href="tel:+353860419300" className="text-teal hover:underline">
+                    +353 86 041 9300
                   </a>. To help us process your cancellation more quickly, please have your reference number ready or include it in the email you send to us.
                 </p>
                 <p>
@@ -572,8 +572,8 @@ export default function TermsPage() {
                 </p>
                 <p>
                   <strong className="text-navy">Phone:</strong>{' '}
-                  <a href="tel:+353894227939" className="text-teal hover:underline">
-                    +353 89 422 7939
+                  <a href="tel:+353860419300" className="text-teal hover:underline">
+                    +353 86 041 9300
                   </a>
                 </p>
                 <p>
