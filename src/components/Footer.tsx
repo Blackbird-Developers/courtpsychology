@@ -6,9 +6,8 @@ export function Footer() {
   const services = [
     { href: '/services#criminal', label: 'Criminal Court Assessments' },
     { href: '/services#family', label: 'Family Law Reports' },
-    { href: '/services#medicolegal', label: 'Medico-Legal Reports' },
+    { href: '/services#actuarial', label: 'Actuarial Services' },
     { href: '/services#risk', label: 'Forensic Risk Assessments' },
-    { href: '/services#parenting', label: 'Parenting Capacity' },
   ];
 
   const company = [

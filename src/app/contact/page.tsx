@@ -17,9 +17,8 @@ interface FormData {
 const caseTypes = [
   { value: 'criminal', label: 'Criminal Court Assessment' },
   { value: 'family', label: 'Family Law Report' },
-  { value: 'medicolegal', label: 'Medico-Legal Report' },
+  { value: 'actuarial', label: 'Actuarial Services' },
   { value: 'risk', label: 'Forensic Risk Assessment' },
-  { value: 'parenting', label: 'Parenting Capacity Assessment' },
   { value: 'employment', label: 'Workplace/Employment' },
   { value: 'other', label: 'Other / Not Sure' },
 ];

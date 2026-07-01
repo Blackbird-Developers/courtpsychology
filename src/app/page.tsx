@@ -36,7 +36,7 @@ export default function HomePage() {
 
               {/* Headline - Solicitor-focused */}
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] font-bold text-navy leading-[1.1] mb-5 text-balance">
-                Court-Ready Forensic Psychological Reports,{' '}
+                Court-Ready Forensic Expert Witness Reports,{' '}
                 <span className="relative">
                   <span className="relative z-10">Fast &amp; Reliable</span>
                   <span className="absolute bottom-1 left-0 right-0 h-3 bg-teal/20 -z-0" />
@@ -45,8 +45,8 @@ export default function HomePage() {
 
               {/* Subheadline - Speed, reliability, ease for solicitors */}
               <p className="text-base sm:text-lg md:text-xl text-navy/70 leading-relaxed mb-6 max-w-xl">
-                Independent forensic psychological assessments.{' '}
-                Standard formats judges expect. Legal Aid &amp; private clients catered for. Hassle-free process from instruction to delivery.
+                Independent expert reports.{' '}
+                Standard formats judges expect. Legal Aid &amp; private clients catered for. Send us your brief and get a quote and an expert&apos;s CV today.
               </p>
 
               {/* Key benefits - scannable, solicitor-focused */}
@@ -261,10 +261,10 @@ export default function HomePage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
               }
-              title="Medico-Legal"
-              description="Psychological injury, PTSD assessment, prognosis reports"
-              href="/services#medicolegal"
-              features={['Personal injury', 'PTSD assessment', 'Prognosis reports']}
+              title="Actuarial Services"
+              description="Independent actuarial reports quantifying financial loss for civil litigation and family law."
+              href="/services#actuarial"
+              features={['Loss of earnings', 'Personal injury & fatal accident', 'Periodic Payment Orders (PPOs)', 'Pension Adjustment Orders (PAOs)', 'Financial redress']}
             />
             
             <ServiceCard
@@ -279,17 +279,6 @@ export default function HomePage() {
               features={['Violence risk', 'Sexual offence risk', 'Self-harm assessment']}
             />
             
-            <ServiceCard
-              icon={
-                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                </svg>
-              }
-              title="Parenting Capacity"
-              description="PAMS assessments, capacity evaluations, and support recommendations for child protection and family welfare proceedings."
-              href="/services#parenting"
-              features={['PAMS assessments', 'Capacity evaluation', 'Kinship assessments', 'Quick turnaround', 'Nationwide']}
-            />
           </div>
 
           <div className="text-center mt-10">

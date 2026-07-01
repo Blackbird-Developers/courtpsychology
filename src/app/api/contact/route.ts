@@ -23,9 +23,8 @@ export async function POST(request: Request) {
     const caseTypeLabels: Record<string, string> = {
       criminal: 'Criminal Court Assessment',
       family: 'Family Law Report',
-      medicolegal: 'Medico-Legal Report',
+      actuarial: 'Actuarial Services',
       risk: 'Forensic Risk Assessment',
-      parenting: 'Parenting Capacity Assessment',
       employment: 'Workplace/Employment',
       other: 'Other / Not Sure',
     };

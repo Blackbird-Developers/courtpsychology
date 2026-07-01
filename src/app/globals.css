@@ -287,6 +287,7 @@ input:focus, select:focus, textarea:focus {
 .progress-step-circle {
   width: 2.5rem;
   height: 2.5rem;
+  flex-shrink: 0;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -312,7 +313,8 @@ input:focus, select:focus, textarea:focus {
 }
 
 .progress-step-line {
-  width: 3rem;
+  flex: 0 1 3rem;
+  min-width: 0;
   height: 2px;
   background: var(--color-grey);
   transition: background 0.3s ease;
@@ -325,7 +327,7 @@ input:focus, select:focus, textarea:focus {
 
 @media (min-width: 640px) {
   .progress-step-line {
-    width: 5rem;
+    flex-basis: 5rem;
   }
 }
 

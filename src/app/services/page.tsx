@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Forensic Assessment Services | Expert Reports',
-  description: 'Comprehensive forensic psychological assessment services for Irish courts including criminal, family law, medico-legal, risk assessments, and parenting capacity evaluations.',
+  description: 'Comprehensive expert witness procurement and support for Irish courts including criminal, family law, actuarial services, risk assessments, and harmful sexual behaviour evaluations.',
 };
 
 interface ServiceSection {
@@ -85,34 +85,38 @@ const serviceSections: ServiceSection[] = [
     turnaround: '28-35 days standard'
   },
   {
-    id: 'medicolegal',
-    title: 'Medico-Legal Reports',
-    subtitle: 'Personal Injury & Civil Litigation',
-    description: 'Psychological assessments for civil litigation, providing detailed evaluation of psychological injury, causation, prognosis, and recommendations for treatment.',
+    id: 'actuarial',
+    title: 'Actuarial Services & Litigation Support',
+    subtitle: 'Civil Litigation & Family Law',
+    description: 'Independent actuarial assessments for civil litigation, providing detailed calculation of financial loss, pension value adjustments, and long-term future care costs. Clear, easy-to-follow reports.',
     services: [
       {
-        name: 'Psychological Injury Assessment',
-        description: 'Comprehensive evaluation of psychological harm resulting from accident, trauma, or negligence, with full diagnostic formulation.'
+        name: 'Forensic Actuarial Reports',
+        description: 'Independent actuarial assessments for civil litigation, providing detailed calculation of financial loss, pension value adjustments, and long-term future care costs. Clear, easy-to-follow reports.'
       },
       {
-        name: 'PTSD & Trauma Assessment',
-        description: 'Specialist assessment of post-traumatic stress disorder and related conditions using validated diagnostic instruments.'
+        name: 'Personal Injury & Fatal Accident Claims',
+        description: 'Comprehensive evaluation of financial harm resulting from accident, trauma, or negligence, with full calculation of past and future loss of earnings.'
       },
       {
-        name: 'Prognosis Reports',
-        description: 'Evidence-based opinion on expected psychological recovery trajectory, treatment requirements, and long-term implications.'
+        name: 'Periodic Payment Orders (PPOs)',
+        description: 'Specialist assessment and valuation of structured, ongoing payments for catastrophic injury cases, aligned with Irish High Court standards.'
       },
       {
-        name: 'Treatment Recommendations',
-        description: 'Detailed costing of recommended psychological interventions required for optimal recovery.'
+        name: 'Pension Adjustment Orders (PAOs)',
+        description: 'Evidence-based valuation of pension entitlements in family law, divorce, and separation cases, ensuring precise division of marital financial assets.'
+      },
+      {
+        name: 'Financial Redress & Loss of Earnings',
+        description: 'Detailed costing and capitalisation of financial damages resulting from unfair dismissal, breach of contract, or commercial disputes.'
       }
     ],
     deliverables: [
-      'Detailed liability report',
-      'Diagnostic formulation',
-      'Causation opinion',
-      'Treatment plan & costing',
-      'Prognosis statement'
+      'Detailed actuarial report',
+      'Loss of earnings calculation',
+      'Pension valuation',
+      'Future care costings',
+      'Clear, easy-to-follow presentation'
     ],
     turnaround: '14-21 days standard'
   },
@@ -147,38 +151,6 @@ const serviceSections: ServiceSection[] = [
       'Review timeframes'
     ],
     turnaround: '21-28 days standard'
-  },
-  {
-    id: 'parenting',
-    title: 'Parenting Capacity Assessments',
-    subtitle: 'Child Protection & Family Welfare',
-    description: 'Comprehensive evaluation of parenting ability and capacity to meet children\'s developmental needs, conducted using standardised frameworks and with sensitivity to cultural context.',
-    services: [
-      {
-        name: 'PAMS Assessment',
-        description: 'Parent Assessment Manual (PAMS) evaluation examining parenting skills across all relevant domains with practical task observation.'
-      },
-      {
-        name: 'Parenting Capacity Evaluation',
-        description: 'Comprehensive assessment of ability to provide adequate care, including psychological functioning, attachment capacity, and practical parenting skills.'
-      },
-      {
-        name: 'Kinship Assessment',
-        description: 'Evaluation of extended family members or connected persons being considered as alternative carers for children.'
-      },
-      {
-        name: 'Special Guardianship Assessment',
-        description: 'Assessment for prospective special guardians, evaluating capacity to meet long-term needs of specific children.'
-      }
-    ],
-    deliverables: [
-      'Full PAMS report',
-      'Observed interaction analysis',
-      'Strengths & needs profile',
-      'Support recommendations',
-      'Child-focused conclusions'
-    ],
-    turnaround: '28-42 days standard'
   },
   {
     id: 'hsb',
@@ -258,7 +230,7 @@ export default function ServicesPage() {
               Our Services
             </span>
             <h1 className="text-4xl md:text-5xl font-bold text-navy mb-6 text-balance">
-              Comprehensive Forensic Psychological Services
+              Comprehensive Expert Witness Procurement and Admin
             </h1>
             <p className="text-navy/60 text-lg md:text-xl leading-relaxed">
               We coordinate the preparation of psychological reports by independent clinicians for criminal,
