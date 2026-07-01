@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -24,9 +25,18 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand Column */}
           <div className="lg:col-span-1">
-            <div className="flex items-baseline mb-4">
-              <span className="text-2xl font-bold tracking-tight">EXPERT</span>
-              <span className="text-2xl font-medium tracking-tight">Reports</span>
+            <div className="flex items-center gap-2 mb-4">
+              <Image
+                src="/logo.png"
+                alt="Expert Reports logo"
+                width={56}
+                height={56}
+                className="w-14 h-14 object-contain brightness-0 invert"
+              />
+              <div className="flex items-baseline">
+                <span className="text-2xl font-bold tracking-tight">EXPERT</span>
+                <span className="text-2xl font-medium tracking-tight">Reports</span>
+              </div>
             </div>
             <p className="text-white/70 text-sm leading-relaxed mb-6">
               Coordination of independent forensic psychological assessments for Irish courts.

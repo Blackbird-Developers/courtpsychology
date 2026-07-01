@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
 export function Header() {
@@ -77,6 +78,14 @@ export function Header() {
           <nav className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group relative z-50">
+            <Image
+              src="/logo.png"
+              alt="Expert Reports logo"
+              width={56}
+              height={56}
+              priority
+              className="w-12 h-12 sm:w-14 sm:h-14 object-contain"
+            />
             <div className="flex items-baseline">
               <span className="text-xl sm:text-2xl font-bold text-navy tracking-tight">
                 EXPERT
